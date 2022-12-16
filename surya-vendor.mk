@@ -305,7 +305,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-legacy \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
