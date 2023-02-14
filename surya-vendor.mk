@@ -598,6 +598,7 @@ PRODUCT_PACKAGES += \
     libdrmtime \
     libdsi_netctrl \
     libft2vendor \
+    libflaw \
     libgdtap \
     libgf_ca \
     libgf_hal \
@@ -861,6 +862,7 @@ PRODUCT_PACKAGES += \
     slim_daemon \
     tftp_server \
     time_daemon \
+    thermal-engine \
     vibrator_calibration \
     vppservice \
     xtra-daemon \

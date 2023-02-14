@@ -6043,6 +6043,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libflaw",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libflaw.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmiStereoFactoryRemapLib",
 	owner: "xiaomi",
 	strip: {
@@ -9710,3 +9727,35 @@ cc_prebuilt_binary {
 	system_ext_specific: true,
 }
 
+cc_prebuilt_binary {
+	name: "thermal-engine",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/thermal-engine"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sound_trigger.primary.sm6150_xiaomi",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/sound_trigger.primary.sm6150.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/sound_trigger.primary.sm6150.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
