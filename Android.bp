@@ -9003,7 +9003,7 @@ android_app_import {
 	name: "MotoDolbyDax3",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk",
-	overrides: ["MusicFX"],
+	//overrides: ["MusicFX"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -9740,7 +9740,8 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_library_shared {
-	name: "sound_trigger.primary.sm6150_xiaomi",
+	name: "sound_trigger.primary.sm6150.surya",
+	stem: "sound_trigger.primary.sm6150",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -9759,3 +9760,4 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
+
