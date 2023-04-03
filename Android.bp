@@ -9147,3 +9147,40 @@ cc_prebuilt_binary {
 	system_ext_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "libflaw",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libflaw.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libloc_api_wds",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_api_wds.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libloc_api_wds.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+

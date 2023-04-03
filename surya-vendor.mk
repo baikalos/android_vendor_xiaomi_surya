@@ -814,4 +814,8 @@ PRODUCT_PACKAGES += \
     time_daemon \
     vppservice \
     xtra-daemon \
-    dpmd
+    dpmd \
+    libflaw \
+    libloc_api_wds
+
+$(call inherit-product, vendor/xiaomi/surya/surya-camera_hal.mk)
