@@ -8944,18 +8944,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "mi_thermald",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/mi_thermald"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "netmgrd",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/netmgrd"],
@@ -9184,3 +9172,14 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+cc_prebuilt_binary {
+	name: "thermal-engine",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/thermal-engine"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
