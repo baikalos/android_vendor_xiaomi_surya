@@ -1909,8 +1909,11 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/soundfx/libasphere.so"],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/soundfx/libasphere.so"],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "soundfx",
 	prefer: true,
@@ -1945,8 +1948,11 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/soundfx/libshoebox.so"],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/soundfx/libshoebox.so"],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "soundfx",
 	prefer: true,
