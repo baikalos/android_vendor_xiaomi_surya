@@ -2,3 +2,4 @@ service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-servi
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

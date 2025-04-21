@@ -17,3 +17,4 @@ service vendor.vppservice /vendor/bin/vppservice
 
     # start only when requested (uncomment below to disable service at boot)
     # disabled
+    writepid /dev/cpuset/system-background/tasks

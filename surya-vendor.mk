@@ -267,6 +267,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/vendor/lib64/soundfx/libspatialaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libspatialaudio.so \
     vendor/xiaomi/surya/proprietary/vendor/lib/hw/sound_trigger.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sm6150.so \
     vendor/xiaomi/surya/proprietary/vendor/lib64/hw/sound_trigger.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.sm6150.so \
+    vendor/xiaomi/surya/proprietary/vendor/lib64/deviceInfoServiceModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModule.so \
+    vendor/xiaomi/surya/proprietary/vendor/lib64/liblocdiagiface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocdiagiface.so \
+    vendor/xiaomi/surya/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
 
 
 #    vendor/xiaomi/surya/proprietary/system/lib/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liblhdcBT_enc.so \
